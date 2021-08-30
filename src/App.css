@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+html {
+  box-sizing: border-box;
+  font-size: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.blue-block{
+  display:block;
+  width:191px;
+  height:191px;
+  background-color: #46C5D7;
+  /* margin:0; */
+}
+.temp{
+  display:flex;
+  margin:0 25%;
 }
 
-.App-link {
-  color: #61dafb;
+.App{
+  padding-top:20px;
+  width:auto;
+  margin:0 20px;
+  /* margin:auto; */
+  display:flex;
+  /* justify-content:center; */
+  /* align-items:center; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content{
+  padding:10px;
+  margin:25px 15px;
+  min-width:500px;
+  padding:1rem 4rem;
+  border:0.1px solid black;
+  width:630px;
+  box-shadow:1px 1px 5px 0.5px grey;
+  background:white;
+  position:absolute;
+  z-index:20;
 }
+
+.content > h1{
+  margin:0;
+}
+
+.sp{
+  margin-top:2rem;
+}
+
+
+
+/* .ant-radio-button-checked .ant-radio-button-inner{
+  border-color: red !important ;
+}
+
+.ant-radio-button-checked .ant-radio-button-inner:after{
+  background-color: red !important;
+}
+
+.ant-radio-button:hover .ant-radio-button-inner {
+  border-color: red !important;
+}
+
+.ant-radio-group .ant-radio-group-solid{
+  background-color:red !important;
+}
+
+.ant-radio-group .ant-radio-group-solid.ant-radio-button-wrapper .ant-radio-button-wrapper-checked::after{
+  background: purple !important;
+  background-color:purple !important;
+} */
+/* .ant-radio-group-solid .ant-radio-button-wrapper-checked:after{
+  background-color:red; 
+}*/
+
+/* .ant-radio-button-wrapper .ant-radio-button-wrapper-checked {
+  background-color:red;
+} */
+
+/* .ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled)::after{
+  color:purple !important;
+  background:orange !important;
+}
+
+.ant-radio-button-wrapper .ant-radio-button-wrapper-checked::after{
+  background: pink !important;
+}
+
+.ant-radio-button .ant-radio-button-checked::after{
+  background:pink !important;
+}  */
+
+.ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+  color: #fff;
+  background:#FF7200 !important;
+  border-color: #FF7200 !important;
+}
+
+/* .ant-radio-group .ant-radio-group-solid > .ant-radio-button-wrapper .ant-radio-button-wrapper-checked{
+  color: #fff;
+  background:#FF7200 !important;
+  border-color: #FF7200 !important;
+} */
